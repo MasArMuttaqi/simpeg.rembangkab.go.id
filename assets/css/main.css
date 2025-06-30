@@ -18,7 +18,7 @@
 }
 @font-face {
    font-family: myFirstFont;
-   src: url("C:/Users/AR/Downloads/simpeg_v1/version 2.1/assets/font/nykNgayogyanNew.woff2");
+   src: url("./font/nykNgayogyanNew.woff2");
 }
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Statistik</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/jqc-1.12.4/dt-2.3.2/b-3.2.3/sl-3.0.1/datatables.min.css"/>
+  <link rel="stylesheet" href="Editor-2.4.2/css/editor.dataTables.css"> 
+  <script src="https://cdn.datatables.net/v/dt/jqc-1.12.4/dt-2.3.2/b-3.2.3/sl-3.0.1/datatables.min.js"></script>
+  <script src="Editor-2.4.2/js/dataTables.editor.js"></script>
+
+<style>
+@font-face {
+  font-family: aksara;
+  src: url("C:/Users/AR/Downloads/simpeg_v1/version 2.1/assets/font/nykNgayogyanNew.woff2");
+}
+</style>
+<style>
+  body{
+    background-color: #d1d7db;
+  }
+  .flex-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-container h1 {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 700;
+    color: #fcf5eb;
+  }
+
+  .flex-container h2 {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 600;
+    color: #fcf5eb;
+  }
+
+  .flex-container img {
+    max-height: 57px;
+    margin-right: 10px;
+  }
+
+  .flex-container span {
+    font-family:aksara !important;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fcf5eb; /* Optional: Change color for the second line */
+  }
+
+  .back{
+    width: 100%;
+    height: 250px;
+    background-color: #008069;
+    z-index: 1;
+    position: absolute;
+    margin-top: -16px;
+  }
+  .navbar{
+    /*background-color: transparent !important;*/
+    z-index: 2;
+    padding-left: 63px;
+    padding-top: 28px;
+  }
+
+
+  
+.content{
+  position: fixed;
+  top: 115px;
+  z-index: 4;
+  left: 100px;
+  right: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fcf5eb;
+}
+.content p{
+  color: #111b21;
+}
+
+.aksara{
+  font-family:aksara !important;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+</style>
+</head>
+<body>
+<div class="back"></div>
+<nav class="navbar navbar-expand-sm fixed-top">
+  <div class="flex-container">
+    <img src="https://rembangkab.go.id/haribawana/uploads/2017/01/logorembang.png" alt="Smiley Face" class="logo">
+        <div>
+          <h1>Badan Kepegawaian Daerah</h1> <h2>Kabupaten Rembang</h2>
+          <span>ꦧꦣꦤ꧀ꦏꦼꦥꦼꦒꦮꦻꦪꦤ꧀ꦝꦌꦫꦃꦏꦧꦸꦥꦠꦺꦤ꧀ꦉꦩ꧀ꦧꦁ</span>
+      </div>
+  </div>
+
+
+</nav>
+<!-- <div class="container-fluid mt-3">
+  <h3>Collapsible Navbar</h3>
+  <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).</p>
+  <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+  <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>
+</div> -->
+<div class=" mt-4 p-5 content rounded">
+    <h1>Nyuwun kawigatosanipun</h1> 
+    <p>Detail informasi statistik ASN Kabupaten Rembang belum dapat diakses, karena dalam tahapan pengembangan.</p> 
+    <hr>
+    <h1 class="aksara">ꦚꦸꦮꦸꦤ꧀ꦏꦮꦶꦒꦠꦺꦴꦱꦤꦶꦥꦸꦤ꧀</h1>
+    <p class="aksara">꧋ꦣꦼꦠꦻꦭ꧀ꦆꦤ꧀ꦥ꦳ꦺꦴꦂꦩꦱꦶꦱ꧀ꦠꦠꦶꦱ꧀ꦠꦶꦏ꧀ꦄ꧈ꦌꦱ꧀‌ꦄꦼꦤ꧀ꦏꦧꦸꦥꦠꦺꦤ꧀ꦉꦩ꧀ꦧꦁꦧꦼꦭꦸꦩ꧀ꦝꦥꦠ꧀ꦝꦶꦄꦏ꧀ꦱꦺꦱ꧀‌ꦏꦉꦤꦣꦭꦩ꧀ꦠꦲꦥꦤ꧀ꦥꦼꦔꦼꦩ꧀ꦧꦔꦤ꧀꧈</p>
+  </div>
+
+</body>
+</html>
+
+

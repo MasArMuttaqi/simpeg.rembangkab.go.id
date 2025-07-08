@@ -186,7 +186,7 @@
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo-bkd.png" alt=""> -->
         <div class="flex-container">
-          <img src="https://rembangkab.go.id/haribawana/uploads/2017/01/logorembang.png" alt="Smiley Face" class="example-img" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Lambang_Kabupaten_Rembang.webp" alt="Smiley Face" class="example-img" />
           <div>
             <h1 class="sitename">Badan Kepegawaian Daerah</h1><h2>Kabupaten Rembang</h2>
             <span>ꦧꦣꦤ꧀ꦏꦼꦥꦼꦒꦮꦻꦪꦤ꧀ꦝꦌꦫꦃꦏꦧꦸꦥꦠꦺꦤ꧀ꦉꦩ꧀ꦧꦁ</span>
@@ -585,7 +585,7 @@
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
             <div class="flex-container">
-              <img src="https://rembangkab.go.id/haribawana/uploads/2017/01/logorembang.png" alt="Smiley Face" class="example-img" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Lambang_Kabupaten_Rembang.webp" alt="Smiley Face" class="example-img" />
               <div>
                 <h1 class="sitename">Badan Kepegawaian Daerah <br>Kabupaten Rembang</h1>
                 <span>ꦧꦣꦤ꧀ꦏꦼꦥꦼꦒꦮꦻꦪꦤ꧀ꦝꦌꦫꦃꦏꦧꦸꦥꦠꦺꦤ꧀ꦉꦩ꧀ꦧꦁ</span>
@@ -693,7 +693,7 @@
 
 <script src="daftar_opd.json"></script>
 <script src="report_data.json"></script>
-<script src="daftar_jft.json"></script>
+<script type="text/javascript" src="tableConvert.com_ecuzht.json"></script>
 <script> 
   function numberWithCommas(x) {
     return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ".");
@@ -781,10 +781,18 @@
     });
     // daftar_opd
 
-    var list_jft = $.parseJSON(daftar_jft);
+     
+     // console.log(daftar_jft);
     var list_jft1 = [];
     var count_jft = [];
-    $(list_jft).each(function(i,k){
+     const uniqueArray_jft = daftar_jft.filter((value, index, self) =>
+        index === self.findIndex((t) => (
+            t.Nama === value.Nama
+        ))
+      )
+     // console.log(uniqueArray_jft);
+    $(uniqueArray_jft).each(function(i,k){
+      // console.log(k.Nama);
       list_jft1.push(k.Nama);
       count_jft.push(Math.floor(Math.random() * 100) + 1);
     });
@@ -898,8 +906,9 @@ const data_JFT = [{
 
 const layout_JFT = { 
   xaxis: { tickangle: -45 // Rotates x-axis labels by -45 degrees (counter-clockwise)
-         }, tickfont: {
-          size: 10 // Set the desired font size here
+         }, font: {
+          size: 9,
+          color: '#7f7f7f'
         }
 };
 

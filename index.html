@@ -446,26 +446,26 @@
               <div class="service-content">
                 <h3>Jabatan Fungsional Tertentu</h3>
                  <!-- <h5><img src="https://cdn-icons-png.flaticon.com/512/9841/9841569.png" width="46" height="46" alt="Not found free icon" title="Not found free icon"> Data belum tersedia</h5> -->
-<!-- Nav pills -->
-  <ul class="nav nav-pills" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active" data-bs-toggle="pill" href="#jft">Jabatan Fungsional Tertentu (JFT)</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="pill" href="#jfu">Jabatan Fungsional Umum (JFU) / Pelaksana</a>
-    </li>
-  </ul>
+                <!-- Nav pills -->
+                  <ul class="nav nav-pills" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-bs-toggle="pill" href="#jft">Jabatan Fungsional Tertentu (JFT)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-bs-toggle="pill" href="#jfu">Jabatan Fungsional Umum (JFU) / Pelaksana</a>
+                    </li>
+                  </ul>
 
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div id="jft" class="container tab-pane active"><br>
-      <div id="PLOT_JFT" style="width:100%;"></div>
-    </div>
-    <div id="jfu" class="container tab-pane fade"><br>
-      <h5><img src="https://cdn-icons-png.flaticon.com/512/9841/9841569.png" width="46" height="46" alt="Not found free icon" title="Not found free icon"> Data belum tersedia</h5>
-    </div>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div id="jft" class="container tab-pane active"><br>
+                      <div id="PLOT_JFT" style="width:100%;"></div>
+                    </div>
+                    <div id="jfu" class="container tab-pane fade"><br>
+                      <div id="PLOT_JFU" style="width:100%;"></div>
+                    </div>
                  
-                <p>JF memiliki tugas memberikan pelayanan fungsional yang berdasarkan pada keahlian dan keterampilan tertentu dengan memperhatikan ruang lingkup kegiatan. Berdasarkan Peraturan Bupati Rembang Nomor	4 	Tahun 2020 Tentang Nomenklatur Jabatan Pelaksana dan Jabatan Fungsional Bagi Pegawai Negeri Sipil di Lingkungan Pemerintah Kabupaten Rembang</p>
+                <p>JF memiliki tugas memberikan pelayanan fungsional yang berdasarkan pada keahlian dan keterampilan tertentu dengan memperhatikan ruang lingkup kegiatan. Berdasarkan Peraturan Bupati Rembang Nomor 4   Tahun 2020 Tentang Nomenklatur Jabatan Pelaksana dan Jabatan Fungsional Bagi Pegawai Negeri Sipil di Lingkungan Pemerintah Kabupaten Rembang</p>
                 <a href="statistics.html" class="service-link">
                   <span>Learn More</span>
                   <i class="bi bi-arrow-right"></i>
@@ -665,6 +665,7 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
+          <!-- <h4>Hic solutasetp</h4> -->
           <img src="https://www.menpan.go.id/site/images/logo/berakhlak-bangga-melayani-bangsa.png" height="50px">
         </div>
 
@@ -802,6 +803,8 @@
      // console.log(daftar_jft);
     var list_jft1 = [];
     var count_jft = [];
+    var list_jfu1 = [];
+    var count_jfu = [];
      const uniqueArray_jft = daftar_jft.filter((value, index, self) =>
         index === self.findIndex((t) => (
             t.Nama === value.Nama
@@ -809,12 +812,15 @@
       )
      // console.log(uniqueArray_jft);
     $(uniqueArray_jft).each(function(i,k){
-      // console.log(k.Nama);
-      list_jft1.push(k.Nama);
-      count_jft.push(Math.floor(Math.random() * 100) + 1);
+      if (k.kategori== 'JFU') {
+        list_jfu1.push(k.Nama);
+        count_jfu.push(Math.floor(Math.random() * 100) + 1);
+      }else{
+        list_jft1.push(k.Nama);
+        count_jft.push(Math.floor(Math.random() * 100) + 1);
+      }
     });
-    // console.log(list_jft1);
-    // console.log(count_jft);
+
 
     //gender
     const xArray_jeniskelamin = ["LAKI-LAKI", "PEREMPUAN"];
@@ -932,6 +938,28 @@ const layout_JFT = {
 Plotly.newPlot("PLOT_JFT", data_JFT, layout_JFT);
 //JFT end
 
+//JFT
+const xArray_JFU = list_jfu1;
+const yArray_JFU = count_jfu;
+
+const data_JFU = [{
+  x:xArray_JFU,
+  y:yArray_JFU,
+  type:"bar",
+  orientation:"v",
+  marker: {color:"#A8D5BA"}
+}];
+
+const layout_JFU = { 
+  xaxis: { tickangle: -45 // Rotates x-axis labels by -45 degrees (counter-clockwise)
+         }, font: {
+          size: 9,
+          color: '#7f7f7f'
+        }
+};
+
+Plotly.newPlot("PLOT_JFU", data_JFU, layout_JFU);
+//JFT end
 
 
   });

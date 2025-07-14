@@ -993,14 +993,23 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about {
+/* .about {
   background-image: url(../img/1000253470.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.486);
   background-blend-mode: overlay;
+} */
+
+.about:before {
+    content: ' ';
+    bbackground-image: url(../img/1000253470.png);
+    background-size: cover;
+    background-color: #fff; /* fallback if image fails */
+    opacity: 0.2;
 }
+
 .about .content .who-we-are {
   text-transform: uppercase;
   margin-bottom: 15px;

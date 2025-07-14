@@ -993,6 +993,10 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about {
+  background-image: url(../img/1000253470.png);
+  background-size: cover;
+}
 .about .content .who-we-are {
   text-transform: uppercase;
   margin-bottom: 15px;

@@ -1002,12 +1002,13 @@ section,
   background-blend-mode: overlay;
 } */
 
-.about:before {
-    content: ' ';
-    background-image: url(../img/1000253470.png);
-    background-size: cover;
-    background-color: #fff; /* fallback if image fails */
-    opacity: 0.2;
+div.about:before {
+  background-image: url(../img/1000253470.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff; /* fallback if image fails */
+  opacity: 0.2;
 }
 
 .about .content .who-we-are {

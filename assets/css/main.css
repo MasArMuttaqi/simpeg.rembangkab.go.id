@@ -1004,7 +1004,7 @@ section,
 
 .about:before {
     content: ' ';
-    bbackground-image: url(../img/1000253470.png);
+    background-image: url(../img/1000253470.png);
     background-size: cover;
     background-color: #fff; /* fallback if image fails */
     opacity: 0.2;

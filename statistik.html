@@ -211,7 +211,9 @@ color: #565f6b;
                   </tbody>
                 </table>
 
-          
+              <div class="accordion" id="dynamicAccordion">
+      <!-- Accordion items will be injected here -->
+              </div>
 
 <!-- according -->
           <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -284,11 +286,32 @@ color: #565f6b;
 
 $(document).ready(function() {
 
+  const accordionContainer = $('#dynamicAccordion');
   const uniqueArray_jft = daftar_jft.filter((value, index, self) =>
         index === self.findIndex((t) => (
             t.perangkat_daerah === value.perangkat_daerah
         ))
       )
+  let kode = 0;
+  $.each(uniqueArray_jft, function(index, item) {
+    var urutan = kode++;
+        const accordionItem = `
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading${kode}">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${kode}" aria-expanded="false" aria-controls="collapse${kode}">
+                ${item.perangkat_daerah}
+              </button>
+            </h2>
+            <div id="collapse${kode}" class="accordion-collapse collapse" aria-labelledby="heading${item.id}" data-bs-parent="#dynamicAccordion">
+              <div class="accordion-body">
+                daftar JFU dan JFT ${item.perangkat_daerah}
+              </div>
+            </div>
+          </div>
+        `;
+        accordionContainer.append(accordionItem);
+      });
+  
   let num = 0;
   // console.log(uniqueArray_jft);
   var list_jf = "";
@@ -330,7 +353,6 @@ $(document).ready(function() {
   default:
     $("#info-data-kosong").css("display", "block");
 }
-
 
 });
 </script>

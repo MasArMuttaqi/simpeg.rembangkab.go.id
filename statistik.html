@@ -87,6 +87,12 @@ font-family: "Roboto", sans-serif;
   font-family: aksara;
 }
 
+.aksara{
+  font-size: 14px;
+  padding-left: 3px;
+  font-family: aksara;
+}
+
 .konten {
   /*margin-top: 80px;*/
   position: absolute;
@@ -110,9 +116,9 @@ color: #565f6b;
 </style>
 <style>
   .rounded-table {
-    border-collapse: separate;
+     border-collapse: collapse;
     border-spacing: 0;
-    width: 100%;
+    width: 100% !important;
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
@@ -159,42 +165,53 @@ color: #565f6b;
 <div class="col-md-4">
 <h3>Tabel Terkait</h3>
 <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action"><i class="fi fi-tr-people"></i> Jenis Kelamin</a>
-              <a href="#" class="list-group-item list-group-item-action active"><i class="fi fi-tr-diploma"></i> Jenjang Pendidikan</a>
+              <a href="#" class="list-group-item list-group-item-action jenis_kelamin"><i class="fi fi-tr-people"></i> Jenis Kelamin</a>
+              <a href="#" class="list-group-item list-group-item-action Jumlah_asn"><i class="fi fi-tr-users-alt"></i> Jumlah ASN (PNS dan PPPK)</a>
+              <a href="#" class="list-group-item list-group-item-action"><i class="fi fi-tr-diploma"></i> Jenjang Pendidikan</a>
               <a href="#" class="list-group-item list-group-item-action"><i class="fi fi-tr-badge-check"></i> Golongan ASN</a>
               <a href="#" class="list-group-item list-group-item-action"><i class="fi fi-tr-users-alt"></i> Generasi Usia</a>
               <a href="#" class="list-group-item list-group-item-action"><i class="fi fi-tr-sparkles"></i> Jabatan Fungsional</a>
 </div>
 </div> <!-- end of kolom Kategori-->
 <div class="col-md-8">
-          <h3 id='judul' style="height: 24px;">Judul Statistik</h3> 
-          <p>tanggal diperbaharui : <span>2 Januari 2025</span></p>
-                    <table class="table table-striped table-bordered rounded-table">
-            <thead>
-              <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>john@example.com</td>
-              </tr>
-              <tr>
-                <td>Mary</td>
-                <td>Moe</td>
-                <td>mary@example.com</td>
-              </tr>
-              <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
-              </tr>
-            </tbody>
-          </table>
+
+              <h3 id='judul'>Judul Statistik</h3> 
+              <p>tanggal diperbaharui : <span id='update_at'>2 Januari 2025</span></p>
+
+              <div class="well well-lg" id='info-data-kosong' style="display: none; background: rgb(253, 246, 224); padding: 1em; box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px; border-radius: 16px;">
+                <p>nyuwun kawigatosanipun <span class="aksara float-end">ꦚꦸꦮꦸꦤ꧀ꦏꦮꦶꦒꦠꦺꦴꦱꦤꦶꦥꦸꦤ꧀</span></p>
+                <p>data masih kosong atau pilih salah satu data pada tabel terkait <span class="aksara float-end">꧋ꦣꦠꦩꦱꦶꦃꦏꦺꦴꦱꦺꦴꦁꦄꦠꦻꦴꦥꦶꦭꦶꦃꦱꦭꦃꦱꦠꦸꦣꦠꦥꦣꦠꦧꦺꦭ꧀ꦠꦼꦂꦏꦻꦠ꧀</span></p>
+              </div>
+
+                <table id="jenis_kelamin" class="table table-striped table-bordered rounded-table" style="display: none;">
+                  <thead>
+                    <tr>
+                      <th>Organisasi Perangkat Daerah</th>
+                      <th>Laki-laki</th>
+                      <th>Perempuan</th>
+                      <th>Jumlah</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- baris data -->
+                  </tbody>
+                </table>
+
+                <table id="Jumlah_asn" class="table table-striped table-bordered rounded-table" style="display: none;">
+                  <thead>
+                    <tr>
+                      <th>Organisasi Perangkat Daerah</th>
+                      <th>PNS</th>
+                      <th>PPPK</th>
+                      <th>Jumlah ASN</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- baris data -->
+                  </tbody>
+                </table>
+
+          
 
 <!-- according -->
           <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -248,8 +265,46 @@ color: #565f6b;
 <!-- end of footer-->
 
 </div>
+<script src="daftar_opd.json"></script>
+<script src="report_data.json"></script>
+<script type="text/javascript" src="tableConvert.com_ecuzht.json"></script>
+<script>
+  // parse url detect uid
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var uid = url.searchParams.get("uid");
+  console.log(uid);
+</script>
+<script>
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ".");
+  }
 
+$(document).ready(function() {
+
+  switch(uid) {
+  case 'amVuaXNfa2VsYW1pbg==':
+    $(datas).each(function(i,val){
+        $('#jenis_kelamin').append("<tr><td>"+val.NAMA_OPD+"</td><td>"+numberWithCommas(val.LAKI_LAKI)+"</td><td>"+numberWithCommas(val.PEREMPUAN)+"</td><td>"+numberWithCommas(val.JUMLAH_PEGAWAI)+"</td></tr>");
+    });
+    $('#judul').html('Jumah ASN berdasaran jenis kelamin tiap OPD'); 
+    $('.jenis_kelamin').toggleClass('active');
+    $("#jenis_kelamin").css("display", "block");
+  break;
+  case 'anVtbGFoX0FTTg==':
+     $(datas).each(function(i,val){
+        $('#Jumlah_asn').append("<tr><td>"+val.NAMA_OPD+"</td><td>"+numberWithCommas(val.PNS)+"</td><td>"+numberWithCommas(val.PPPK)+"</td><td>"+numberWithCommas(val.JUMLAH_PEGAWAI)+"</td></tr>");
+    });
+    $('#judul').html('Jumah ASN berdasaran kategori kepegawaian tiap OPD'); 
+    $('.Jumlah_asn').toggleClass('active');
+    $("#Jumlah_asn").css("display", "block");
+  break;
+  default:
+    $("#info-data-kosong").css("display", "block");
+}
+
+
+});
+</script>
 </body>
 </html>
-
-

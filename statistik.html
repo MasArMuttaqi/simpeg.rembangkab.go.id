@@ -231,8 +231,9 @@ color: #565f6b;
 <script type="text/javascript" src="tableConvert.com_ecuzht.json"></script>
 <script>
   // parse url detect uid
-    var uid = url.searchParams.get("uid");
-    // console.log(uid);
+		var url_string = window.location.href;
+		var url = new URL(url_string);
+		var uid = url.searchParams.get("uid");
 </script>
 <script>
 

@@ -176,7 +176,7 @@ color: #565f6b;
 <div class="col-md-8">
 
               <h3 id='judul'>Judul Statistik</h3> 
-              <p>tanggal diperbaharui : <span id='update_at'>2 Januari 2025</span></p>
+              <p id='diperbaharui'>tanggal diperbaharui : <span id='update_at'>2 Januari 2025</span></p>
 
  
 <div class="alert alert-success" role="alert" id="info-data-kosong" style="display: none;">
@@ -269,6 +269,9 @@ var uid = url.searchParams.get("uid");
   break;
   default:
     $("#info-data-kosong").css("display", "block");
+    $("#judul").css("display", "none");
+    $("#diperbaharui").css("display", "none");
+    $("#update_at").css("display", "none");
 }
 
 });

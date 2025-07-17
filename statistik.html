@@ -249,7 +249,7 @@ var uid = url.searchParams.get("uid");
   
 
   switch(uid) {
-  case 'a3644eb4-0ad0-4596-8c82-aae994d3e4ce':
+  case "amVuaXNfa2VsYW1pbg==":
     $(datas).each(function(i,val){
         $('#jenis_kelamin').append("<tr><td>"+val.NAMA_OPD+"</td><td>"+numberWithCommas(val.LAKI_LAKI)+"</td><td>"+numberWithCommas(val.PEREMPUAN)+"</td><td>"+numberWithCommas(val.JUMLAH_PEGAWAI)+"</td></tr>");
     });
@@ -257,7 +257,7 @@ var uid = url.searchParams.get("uid");
     $('.jenis_kelamin').toggleClass('active');
     $("#jenis_kelamin").css("display", "block");
   break;
-  case 'anVtbGFoX0FTTg==':
+  case "anVtbGFoX0FTTg==":
      $(datas).each(function(i,val){
         $('#Jumlah_asn').append("<tr><td>"+val.NAMA_OPD+"</td><td>"+numberWithCommas(val.PNS)+"</td><td>"+numberWithCommas(val.PPPK)+"</td><td>"+numberWithCommas(val.JUMLAH_PEGAWAI)+"</td></tr>");
     });

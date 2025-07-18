@@ -335,12 +335,13 @@ var array = [{ name: "cat", value: 17, group: "animal" }, { name: "dog", value: 
        var group= item.name;
     $.each(item.children, function(itemIndex, items) {
       //console.log('  Item:', item.name, 'Value:', item.value);
-      alert(items.name);
-      var itemname = items.name;
+      //alert(items.name);
+      const item_name = "<li class='list-group-item d-flex justify-content-between align-items-start'><div class='ms-2 me-auto'><div class='fw-bold'>"+items.name+"</div>Content for list item"+items.value+"</div><span class='badge text-bg-primary '>"+Math.floor((Math.random() * 10) + 1)+"</span></li>"
     });
        
-      let x = Math.floor((Math.random() * 100) + 1);
-      $('#jfu_jft').append("<div class='accordion-item'><h2 class='accordion-header'><button class='accordion-button' type='button' data-bs-toggle='collapse' data-bs-target='#panelsStayOpen"+group+"' aria-expanded='true' aria-controls='panelsStayOpen"+group+"'>"+group+"</button></h2><div id='panelsStayOpen"+group+"' class='accordion-collapse collapse show'><div class='accordion-body'>"+itemname+"<ol class='list-group list-group-numbered list-group-flush'><li class='list-group-item d-flex justify-content-between align-items-start'><div class='ms-2 me-auto'><div class='fw-bold'>Subheading</div>Content for list item</div><span class='badge text-bg-primary '>"+x+"</span></li></ol></div></div>");
+      
+      $('#jfu_jft').append("<div class='accordion-item'><h2 class='accordion-header'><button class='accordion-button' type='button' data-bs-toggle='collapse' data-bs-target='#panelsStayOpen"+group+"' aria-expanded='true' aria-controls='panelsStayOpen"+group+"'>"+group+"</button></h2><div id='panelsStayOpen"+group+"' class='accordion-collapse collapse show'><div class='accordion-body'>"+itemname+"<ol class='list-group list-group-numbered list-group-flush'>"+item_name
+                           +"</ol></div></div>");
       });
 
 });

@@ -3,7 +3,7 @@
 <head>
   <title>Statistik ASN Kab. Rembang</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport"content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -163,6 +163,13 @@ color: #565f6b;
 <div class="mt-4 p-5 konten">
    
         <a href="index.html" class="btn btn-primary" style="margin-bottom: 25px;"><i class="fi fi-sr-arrow-small-left"></i> Kembali ke halaman depan</a>
+
+<div class="alert alert-info alert-dismissible">
+  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  <strong><i class="fi fi-tr-comment-info"></i> Perhatian</strong> Data yang ditampilkan bersifat <em>dummy</em> dan mengeluarkan angka secara acak (data palsu untuk pengujian sistem).
+</div>
+
+
 <div class="row">
 <div class="col-md-4">
 <h3>Tabel Terkait</h3>
@@ -218,7 +225,9 @@ color: #565f6b;
 
 
 
-                <div class="accordion" id="jfu_jft">
+
+<div class="accordion" id="jsonAccordion"></div>
+
                   <!-- <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
@@ -292,6 +301,16 @@ color: #565f6b;
   function numberWithCommas(x) {
     return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ".");
   }
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function kategori_jf(a){
+ if(a === "JFU"){return "Jabatan Fungsional Umum (JFU) / Pelaksana"}
+else{return "Jabatan Fungsional Tertentu (JFT)"}
+}
 
 
 $(document).ready(function() {
@@ -322,27 +341,57 @@ $(document).ready(function() {
     $("#update_at").css("display", "none");
 }
 
-var array = [{ name: "cat", value: 17, group: "animal" }, { name: "dog", value: 6, group: "animal" }, { name: "snak", value: 2, group: "animal" }, { name: "tesla", value: 11, group: "car" }, { name: "bmw", value: 23, group: "car" }],
-    result = array.reduce((r, { group: name, ...object }) => {
-        var temp = r.find(o => o.name === name);
-        if (!temp) r.push(temp = { name, children: [] });
-        temp.children.push(object);
-        return r;
-    }, []);
-// console.log(result[1]['children'][0]);
-     $.each(result, function(index, item) {
-    // console.log(item.children[1]);
-       const group= item.name;
-    $.each(item.children, function(itemIndex, items) {
-      //console.log('  Item:', item.name, 'Value:', item.value);
-      //alert(items.name);
-      const item_name = "<li class='list-group-item d-flex justify-content-between align-items-start'><div class='ms-2 me-auto'><div class='fw-bold'>"+items.name+"</div>Content for list item"+items.value+"</div><span class='badge text-bg-primary '>"+Math.floor((Math.random() * 10) + 1)+"</span></li>";
-    });;
-       
-      
-      $('#jfu_jft').append("<div class='accordion-item'><h2 class='accordion-header'><button class='accordion-button' type='button' data-bs-toggle='collapse' data-bs-target='#panelsStayOpen"+group+"' aria-expanded='true' aria-controls='panelsStayOpen"+group+"'>"+group+"</button></h2><div id='panelsStayOpen"+group+"' class='accordion-collapse collapse show'><div class='accordion-body'>"+itemname+"<ol class='list-group list-group-numbered list-group-flush'>"+item_name
-                           +"</ol></div></div>");
-      });
+const data = [
+  {
+    "name": "animal",
+    "children": [
+      { "name": "cat", "value": 17 },
+      { "name": "dog", "value": 6 },
+      { "name": "snak", "value": 2 }
+    ]
+  },
+  {
+    "name": "car",
+    "children": [
+      { "name": "tesla", "value": 11 },
+      { "name": "bmw", "value": 23 }
+    ]
+  }
+];
+
+const accordion = document.getElementById("jsonAccordion");
+
+data.forEach((group, index) => {
+  const itemId = `accordion-item-${index}`;
+  const headerId = `heading-${index}`;
+  const collapseId = `collapse-${index}`;
+
+  const childrenList = group.children.map(child =>
+`<li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">${child.name}</div>
+      Cras justo odio ${child.value}
+    </div>
+    <span class="badge bg-primary rounded-pill">${getRandomIntInclusive(1, 10)}</span>
+  </li>`
+  ).join("");
+
+  const itemHTML = `
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="${headerId}">
+        <button class="accordion-button ${index !== 0 ? 'collapsed' : ''}" type="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="${index === 0}" aria-controls="${collapseId}">
+          ${group.name}
+        </button>
+      </h2>
+      <div id="${collapseId}" class="accordion-collapse collapse ${index === 0 ? 'show' : ''}" aria-labelledby="${headerId}" data-bs-parent="#jsonAccordion">
+        <div class="accordion-body">
+          <ol class="list-group list-group-numbered list-group-flush">${childrenList}</ol>
+        </div>
+      </div>
+    </div>`;
+
+  accordion.insertAdjacentHTML("beforeend", itemHTML);
+});
 
 });
 </script>

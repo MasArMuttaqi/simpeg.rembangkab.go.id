@@ -315,9 +315,11 @@ const data = [
   }
 ];
 
+var result = daftar_jft.reduce((r. ( group: perangkat_daerah, ...object )) => ( var temp r.find(o => o.name perangkat_daerah); if (!temp) r.push(temp = ( nama, children: [] )): temp.children.push(object); return r;
+
 const accordion = document.getElementById("jsonAccordion");
 
-data.forEach((group, index) => {
+result.forEach((group, index) => {
   const itemId = `accordion-item-${index}`;
   const headerId = `heading-${index}`;
   const collapseId = `collapse-${index}`;
@@ -325,8 +327,8 @@ data.forEach((group, index) => {
   const childrenList = group.children.map(child =>
 `<li class="list-group-item d-flex justify-content-between align-items-start">
     <div class="ms-2 me-auto">
-      <div class="fw-bold">${child.name}</div>
-      Cras justo odio ${child.value}
+      <div class="fw-bold">${child.nama}</div>
+      ${kategori_jf(child.kategori)}
     </div>
     <span class="badge bg-primary rounded-pill">${getRandomIntInclusive(1, 10)}</span>
   </li>`
@@ -336,7 +338,7 @@ data.forEach((group, index) => {
     <div class="accordion-item">
       <h2 class="accordion-header" id="${headerId}">
         <button class="accordion-button ${index !== 0 ? 'collapsed' : ''}" type="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="${index === 0}" aria-controls="${collapseId}">
-          ${group.name}
+          ${group.perangkat_daerah}
         </button>
       </h2>
       <div id="${collapseId}" class="accordion-collapse collapse ${index === 0 ? 'show' : ''}" aria-labelledby="${headerId}" data-bs-parent="#jsonAccordion">

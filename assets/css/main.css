@@ -1146,6 +1146,10 @@ div.about:before {
   flex-shrink: 0;
   width: 70px;
   height: 70px;
+  background-image: url("https://drive.google.com/thumbnail?id=1Sorg88Y0BxnM4TV5sj8Mvfgp171A_DHa&sz=w1000");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-color: var(--accent-color);
   border-radius: 15px;
   display: grid;

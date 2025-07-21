@@ -1112,6 +1112,10 @@ div.about:before {
 }
 
 .how-we-work .process-item .content:hover .step-icon {
+  background-image: url("https://drive.google.com/thumbnail?id=1Sv2bGTe17xv6aZ71OzPYYm9BOFA-P_0w&sz=w1000");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 15%), var(--accent-color));
   transform: rotate(10deg);
 }
@@ -1146,7 +1150,7 @@ div.about:before {
   flex-shrink: 0;
   width: 70px;
   height: 70px;
-  background-image: url("https://drive.google.com/thumbnail?id=1Sorg88Y0BxnM4TV5sj8Mvfgp171A_DHa&sz=w1000");
+  background-image: url("https://drive.google.com/thumbnail?id=1Sv2bGTe17xv6aZ71OzPYYm9BOFA-P_0w&sz=w1000");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

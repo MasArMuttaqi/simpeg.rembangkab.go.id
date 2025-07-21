@@ -224,9 +224,7 @@ color: #565f6b;
                 </table>
 
 
-
-
-<div class="accordion" id="jsonAccordion"></div>
+<div class="accordion" id="accordionGroup"></div>
 
 
 
@@ -296,59 +294,65 @@ $(document).ready(function() {
     $("#update_at").css("display", "none");
 }
 
-const data = [
-  {
-    "name": "animal",
-    "children": [
-      { "name": "cat", "value": 17 },
-      { "name": "dog", "value": 6 },
-      { "name": "snak", "value": 2 }
-    ]
-  },
-  {
-    "name": "car",
-    "children": [
-      { "name": "tesla", "value": 11 },
-      { "name": "bmw", "value": 23 }
-    ]
-  }
-];
 
-
-const accordion = document.getElementById("jsonAccordion");
-
-data.forEach((group, index) => {
-  const itemId = `accordion-item-${index}`;
-  const headerId = `heading-${index}`;
-  const collapseId = `collapse-${index}`;
-
-  const childrenList = group.children.map(child =>
-`<li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">${child.name}</div>
-      Cras justo odio ${child.value}
-    </div>
-    <span class="badge bg-primary rounded-pill">${getRandomIntInclusive(1, 10)}</span>
-  </li>`
-  ).join("");
-
-  const itemHTML = `
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="${headerId}">
-        <button class="accordion-button ${index !== 0 ? 'collapsed' : ''}" type="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="${index === 0}" aria-controls="${collapseId}">
-          ${group.name}
-        </button>
-      </h2>
-      <div id="${collapseId}" class="accordion-collapse collapse ${index === 0 ? 'show' : ''}" aria-labelledby="${headerId}" data-bs-parent="#jsonAccordion">
-        <div class="accordion-body">
-          <ol class="list-group list-group-numbered list-group-flush">${childrenList}</ol>
-        </div>
-      </div>
-    </div>`;
-
-  accordion.insertAdjacentHTML("beforeend", itemHTML);
 });
+</script>
+<script>
+$(document).ready(function() {
+// daftar_jft = [{"Nama":"Analis Diklat","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Analis Kelembagaan","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Analis Penegakan Integritas dan Disiplin Sumber Daya Manusia Aparatur","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Analis Sumber Daya Manusia Aparatur","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"JF Analis Kepegawaian Muda","kategori":"JFT","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"JF Analis Kepegawaian Pertama","kategori":"JFT","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"JF Pranata Komputer","kategori":"JFT","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"JF Pranata Komputer Muda","kategori":"JFT","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"JF Pranata Komputer Pelaksana","kategori":"JFT","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"JF Pranata Komputer Penyelia","kategori":"JFT","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"JF Pranata Komputer Pertama","kategori":"JFT","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Penata Keuangan","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Pengadministrasi Umum","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Pengelola Formasi dan Pengadaan Pegawai","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Pengelola Gaji","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Pengelola Kepegawaian","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Pengelola Keuangan","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Pengelola Pemanfaatan Barang Milik Daerah","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Pengelola Penyelenggaraan Diklat","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Pengelola Sistem Informasi Manajemen Kepegawaian","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Pengemudi","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Penyusun Program Anggaran dan Pelaporan","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Penyusun Program Penyelenggaraan Diklat","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Penyusun Rencana Mutasi","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Penyusun Rencana Promosi","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Perancang Sistem Informasi Kepegawaian","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Petugas Keamanan","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Pramu Bakti","kategori":"JFU","perangkat_daerah":"Badan Kepegawaian Daerah"},{"Nama":"Analis Bencana","kategori":"JFU","perangkat_daerah":"Badan Penanggulangan Bencana Daerah"},{"Nama":"Analis Dampak Sosial","kategori":"JFU","perangkat_daerah":"Badan Penanggulangan Bencana Daerah"},{"Nama":"Analis Kelembagaan","kategori":"JFU","perangkat_daerah":"Badan Penanggulangan Bencana Daerah"},{"Nama":"Analis Kerusakan Fisik dan Bangunan","kategori":"JFU","perangkat_daerah":"Badan Penanggulangan Bencana Daerah"},{"Nama":"Analis Mitigasi Bencana","kategori":"JFU","perangkat_daerah":"Badan Penanggulangan Bencana Daerah"},{"Nama":"Analis Perencanaan, Evaluasi dan Pelaporan","kategori":"JFU","perangkat_daerah":"Badan Penanggulangan Bencana Daerah"},{"Nama":"Penata Keuangan","kategori":"JFU","perangkat_daerah":"Badan Penanggulangan Bencana Daerah"},{"Nama":"Pengadministrasi Perencanaan dan Program","kategori":"JFU","perangkat_daerah":"Badan Penanggulangan Bencana Daerah"},{"Nama":"Pengadministrasi Umum","kategori":"JFU","perangkat_daerah":"Badan Penanggulangan Bencana Daerah"},{"Nama":"Pengelola Data Dampak Bencana","kategori":"JFU","perangkat_daerah":"Badan Penanggulangan Bencana Daerah"},{"Nama":"Pengelola Gaji","kategori":"JFU","perangkat_daerah":"Badan Penanggulangan Bencana Daerah"}];
 
+//alert(daftar_jft);
+
+// Grouping data
+    const grouped = daftar_jft.reduce((acc, curr) => {
+      const { perangkat_daerah, Nama, kategori } = curr;
+      let group = acc.find(item => item.perangkat_daerah === perangkat_daerah);
+      if (!group) {
+        group = {
+          perangkat_daerah,
+          children: []
+        };
+        acc.push(group);
+      }
+      group.children.push({ Nama, kategori });
+      return acc;
+    }, []);
+
+    // Generate HTML accordion
+    const accordionContainer = document.getElementById('accordionGroup');
+
+    grouped.forEach((group, index) => {
+      const collapseId = `collapse-${index}`;
+      const headingId = `heading-${index}`;
+
+      const childrenHtml = group.children.map(child =>
+        `<li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">${child.Nama}</div>
+      ${kategori_jf(child.kategori)}
+    </div>
+    <span class="badge bg-primary rounded-pill">${getRandomIntInclusive(0, 10)}</span>
+  </li>`
+      ).join('');
+
+      const itemHtml = `
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="${headingId}">
+            <button class="accordion-button ${index !== 0 ? 'collapsed' : ''}" type="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="${index === 0 ? 'true' : 'false'}" aria-controls="${collapseId}">
+              ${group.perangkat_daerah}
+            </button>
+          </h2>
+          <div id="${collapseId}" class="accordion-collapse collapse ${index === 0 ? 'show' : ''}" aria-labelledby="${headingId}" data-bs-parent="#accordionGroup">
+            <div class="accordion-body">
+            <ol class="list-group list-group-numbered list-group-flush">
+            ${childrenHtml}</ol>
+            </div>
+          </div>
+        </div>
+      `;
+
+      accordionContainer.insertAdjacentHTML('beforeend', itemHtml);
+    });
 });
 </script>
 </body>

@@ -241,9 +241,14 @@ color: #565f6b;
                   <thead>
                     <tr>
                       <th>Organisasi Perangkat Daerah</th>
-                      <th>PNS</th>
-                      <th>PPPK</th>
-                      <th>Jumlah ASN</th>
+                      <th>SD/MI</th>
+                      <th>SMP/MTs</th>
+                      <th>SMA/SMK/MA/MAK</th>
+                      <th>Diploma</th>
+                      <th>Diploma IV</th>
+                      <th>Sarjana S1</th>
+                      <th>Magister S2</th>
+                      <th>Doktor S3</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -315,7 +320,7 @@ $(document).ready(function() {
   break;
   case "e5a8b832-1707-4b5c-bc86-28d32093cd42":
      $(datas).each(function(i,val){
-        $('#pendidikan_asn').append("<tr><td>"+val.NAMA_OPD+"</td><td>"+numberWithCommas(val.PNS)+"</td><td>"+numberWithCommas(val.PPPK)+"</td><td>"+numberWithCommas(val.JUMLAH_PEGAWAI)+"</td></tr>");
+        $('#pendidikan_asn').append("<tr><td>"+val.NAMA_OPD+"</td><td>"+numberWithCommas(val.PENDIDIKAN_SD)+"</td><td>"+numberWithCommas(val.PENDIDIKAN_SMP)+"</td><td>"+numberWithCommas(val.PENDIDIKAN_SMA)+"</td><td>"+val.PENDIDIKAN_DIPLOMA+"</td><td>"+val.PENDIDIKAN_D4+"</td><td>"+VAL.PENDIDIKAN_S1+"</td><td>"+VAL.PENDIDIKAN_S2+"</td><td>"+VAL.PENDIDIKAN_S3+"</td></tr>");
     });
     $('#judul').html('Jenjang Pendidikan Aparatur Sipil Negara'); 
     $('.pendidikan_asn').toggleClass('active');

@@ -258,7 +258,7 @@ color: #565f6b;
 
 
 <div class="accordion" id="accordionGroup" style="display: none;"></div>
-
+<p id="catatan">catatan</p>
 
 
 </div> <!-- end of kolom statistik-->
@@ -320,11 +320,12 @@ $(document).ready(function() {
   break;
   case "e5a8b832-1707-4b5c-bc86-28d32093cd42":
      $(datas).each(function(i,val){
-        $('#pendidikan_asn').append("<tr><td>"+val.NAMA_OPD+"</td><td>"+numberWithCommas(val.PENDIDIKAN_SD)+"</td><td>"+numberWithCommas(val.PENDIDIKAN_SMP)+"</td><td>"+numberWithCommas(val.PENDIDIKAN_SMA)+"</td><td>"+val.PENDIDIKAN_DIPLOMA+"</td><td>"+val.PENDIDIKAN_D4+"</td><td>"+VAL.PENDIDIKAN_S1+"</td><td>"+VAL.PENDIDIKAN_S2+"</td><td>"+VAL.PENDIDIKAN_S3+"</td></tr>");
+        $('#pendidikan_asn').append("<tr><td>"+val.NAMA_OPD+"</td><td>"+numberWithCommas(val.PENDIDIKAN_SD)+"</td><td>"+numberWithCommas(val.PENDIDIKAN_SMP)+"</td><td>"+numberWithCommas(val.PENDIDIKAN_SMA)+"</td><td>"+val.PENDIDIKAN_DIPLOMA+"</td><td>"+val.PENDIDIKAN_D4+"</td><td>"+val.PENDIDIKAN_S1+"</td><td>"+val.PENDIDIKAN_S2+"</td><td>"+val.PENDIDIKAN_S3+"</td></tr>");
     });
     $('#judul').html('Jenjang Pendidikan Aparatur Sipil Negara'); 
     $('.pendidikan_asn').toggleClass('active');
     $("#pendidikan_asn").css("display", "block");
+    $('#catatan').html('Jenjang pendidikan profesi dokter spesialis 1 setara S2 dan subspesialis 2 setara S3');
   break;
   case '34274cca-8e5d-4c6f-a7e0-afc67434e66a':
      $('#judul').html('Jabatan Fungsional pada Organisasi Perangkat Daerah');

@@ -294,7 +294,7 @@ color: #565f6b;
                       <tr>
                         <th rowspan='2'>Organisasi Perangkat Daerah</th>
                         <th colspan='4'>Pegawai Negeri Sipil (PNS)</th>
-                        <th colspan='8'>Pegawai Pemerintah dengan Perjanjian Kerja (PPPK)</th>
+                        <th colspan='7'>Pegawai Pemerintah dengan Perjanjian Kerja (PPPK)</th>
                       </tr>
                       <tr>
                         <th>Golongan I</th>
@@ -308,7 +308,6 @@ color: #565f6b;
                         <th>Golongan VII - VIII</th>
                         <th>Golongan IX</th>
                         <th>Golongan X</th>
-                        <th>Golongan XI</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -395,9 +394,9 @@ $(document).ready(function() {
      $('#accordionGroup').css("display","block");
   break;
     case "12345aab-03fa-4cac-9b92-08924983c3cf" :
-      // $(datas).each(function(i,val){
-      //  $('#golongan_pns_pppk').append("<tr><td>"+val.NAMA_OPD+"</td><td>"+numberWithCommas(val.PNS_GOL_1)+"</td><td>"+numberWithCommas(val.PNS_GOL_2)+"</td><td>"+numberWithCommas(val.PNS_GOL_3)+"</td><td>"+numberWithCommas(val.PNS_GOL_4)+"</td><td>"+numberWithCommas(val.PPPK_GOL_I_III)+"</td><td>"+numberWithCommas(val.PPPK_GOL_IV)+"</td><td>"+numberWithCommas(val.PPPK_GOL_V)+"</td><td>"+numberWithCommas(val.PPPK_GOL_VI)+"</td><td>"+numberWithCommas(val.PPPK_GOL_VII_VIII)+"</td><td>"+numberWithCommas(val.PPPK_GOL_IX)+"</td><td>"+numberWithCommas(val.PPPK_GOL_X)+"</td><td>"+numberWithCommas(val.PPPK_GOL_XI)+"</td></tr>");
-     // });
+      $(datas).each(function(i,val){
+      $('#golongan_pns_pppk').append("<tr><td>"+val.NAMA_OPD+"</td><td>"+numberWithCommas(val.PNS_GOL_1)+"</td><td>"+numberWithCommas(val.PNS_GOL_2)+"</td><td>"+numberWithCommas(val.PNS_GOL_3)+"</td><td>"+numberWithCommas(val.PNS_GOL_4)+"</td><td>"+numberWithCommas(val.PPPK_GOL_I_III)+"</td><td>"+numberWithCommas(val.PPPK_GOL_IV)+"</td><td>"+numberWithCommas(val.PPPK_GOL_V)+"</td><td>"+numberWithCommas(val.PPPK_GOL_VI)+"</td><td>"+numberWithCommas(val.PPPK_GOL_VII_VIII)+"</td><td>"+numberWithCommas(val.PPPK_GOL_IX)+"</td><td>"+numberWithCommas(val.PPPK_GOL_X)+"</td></tr>");
+      });
       $('#Golongan_ASN').css("display","block");
       $('#judul').html('Sebaran golongan ASN');
       $('.golongan_asn').toggleClass('active');

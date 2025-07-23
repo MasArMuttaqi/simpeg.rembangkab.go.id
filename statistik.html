@@ -418,8 +418,8 @@ $(document).ready(function() {
   break;
   case '12345aab-03fa-4cac-9b92-08924983c3cf':
        $(datas).each(function(i,val){
-        $('#golonganPNS').append("<tr><td>"+val.NAMA_OPD+"</td><td>"+numberWithCommas(PNS_GOL_1)+"</td><td>"+numberWithCommas(PNS_GOL_2)+"</td><td>"+numberWithCommas(PNS_GOL_3)+"</td><td>"+numberWithCommas(PNS_GOL_4)+"</td></tr>");
-         $('#golonganPPPK').append("<tr><td>"+val.NAMA_OPD+"</td><td>"+numberWithCommas(PPPK_GOL_I_III)+"</td><td>"+numberWithCommas(PPPK_GOL_IV)+"</td><td>"+numberWithCommas(PPPK_GOL_V)+"</td><td>"+numberWithCommas(PPPK_GOL_VI)+"</td><td>"+numberWithCommas(PPPK_GOL_VII_VIII)+"</td><td>"+numberWithCommas(PPPK_GOL_IX)+"</td><td>"+numberWithCommas(PPPK_GOL_X)+"</td><td>"+numberWithCommas(PPPK_GOL_XI)+"</td></tr>");
+        $('#golonganPNS').append("<tr><td>"+val.NAMA_OPD+"</td><td>"+numberWithCommas(val.PNS_GOL_1)+"</td><td>"+numberWithCommas(val.PNS_GOL_2)+"</td><td>"+numberWithCommas(val.PNS_GOL_3)+"</td><td>"+numberWithCommas(val.PNS_GOL_4)+"</td></tr>");
+         $('#golonganPPPK').append("<tr><td>"+val.NAMA_OPD+"</td><td>"+numberWithCommas(val.PPPK_GOL_I_III)+"</td><td>"+numberWithCommas(val.PPPK_GOL_IV)+"</td><td>"+numberWithCommas(val.PPPK_GOL_V)+"</td><td>"+numberWithCommas(val.PPPK_GOL_VI)+"</td><td>"+numberWithCommas(val.PPPK_GOL_VII_VIII)+"</td><td>"+numberWithCommas(val.PPPK_GOL_IX)+"</td><td>"+numberWithCommas(val.PPPK_GOL_X)+"</td><td>"+numberWithCommas(val.PPPK_GOL_XI)+"</td></tr>");
       });
       $('#golongan_asn').css("display","block");
       $('#judul').html('Sebaran golongan ASN');

@@ -194,7 +194,7 @@ color: #565f6b;
               <a href="statistik.html?uid=anVtbGFoX0FTTg==" class="list-group-item list-group-item-action Jumlah_asn"><i class="fi fi-tr-users-alt"></i> Jumlah ASN (PNS dan PPPK)</a>
               <a href="statistik.html?uid=e5a8b832-1707-4b5c-bc86-28d32093cd42" class="list-group-item list-group-item-action pendidikan_asn"><i class="fi fi-tr-diploma"></i> Jenjang Pendidikan</a>
               <a href="statistik.html?uid=12345aab-03fa-4cac-9b92-08924983c3cf" class="list-group-item list-group-item-action"><i class="fi fi-tr-badge-check"></i> Golongan ASN</a>
-              <a href="statistik.html?uid=622fb0e9-080e-411b-bd80-e5bf2f0144de" class="list-group-item list-group-item-action"><i class="fi fi-tr-users-alt"></i> Generasi Usia</a>
+              <a href="statistik.html?uid=622fb0e9-080e-411b-bd80-e5bf2f0144de" class="list-group-item list-group-item-action generasi_usia"><i class="fi fi-tr-users-alt"></i> Generasi Usia</a>
               <a href="statistik.html?uid=34274cca-8e5d-4c6f-a7e0-afc67434e66a" class="list-group-item list-group-item-action Jabatan_fungsional"><i class="fi fi-tr-sparkles"></i> Jabatan Fungsional</a>
 </div>
 </div> <!-- end of kolom Kategori-->
@@ -335,6 +335,10 @@ $(document).ready(function() {
      $('#judul').html('Jabatan Fungsional pada Organisasi Perangkat Daerah');
      $('.Jabatan_fungsional').toggleClass('active');
      $('#accordionGroup').css("display","block");
+  break;
+  case '622fb0e9-080e-411b-bd80-e5bf2f0144de':
+      $('#judul').html('Sebaran generasi usia ASN');
+      $('.generasi_usia').toggleClass('active');
   break;
   default:
     $("#info-data-kosong").css("display", "block");

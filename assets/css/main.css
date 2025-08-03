@@ -998,7 +998,7 @@ section,
   background-position: center;
 
   /* The single CSS rule */
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
       url("https://lh3.googleusercontent.com/d/1Nn5zcp7a96OiYSnU2Cts7G7eStinTL8b=w1000?authuser=1");
 }
 

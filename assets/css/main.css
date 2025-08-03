@@ -993,23 +993,23 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-/* .about {
-  background-image: url(../img/1000253470.png);
-  background-position: center center;
-  background-repeat: no-repeat;
+.about {
   background-size: cover;
-  background-color: rgba(255, 255, 255, 0.486);
-  background-blend-mode: overlay;
-} */
+  background-position: center;
 
-div.about:before {
+  /* The single CSS rule */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("https://lh3.googleusercontent.com/d/1Nn5zcp7a96OiYSnU2Cts7G7eStinTL8b=w1000?authuser=1");
+}
+
+/* div.about:before {
   background-image: url(../img/1000253470.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #fff; /* fallback if image fails */
+  background-color: #fff;
   opacity: 0.2;
-}
+} */
 
 .about .content .who-we-are {
   text-transform: uppercase;

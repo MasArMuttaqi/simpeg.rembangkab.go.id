@@ -33,12 +33,16 @@
    .login-form{
     position: relative;
     z-index: 1;
-    background: #FFFFFF;
     max-width: 360px;
     margin: 0 auto 100px;
     padding: 45px;
     text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(145deg,
+ color-mix(in srgb, var(--accent-color), transparent 95%), var(--surface-color));
+    border: 2px solid
+ color-mix(in srgb, var(--accent-color), transparent 85%);
+    border-radius: 20px;
    }
        .login-form input {
   font-family: "Roboto", sans-serif;
@@ -264,10 +268,9 @@
         <div class="row justify-content-center">
 
             <form class="login-form col-lg-6">
-              <input type="text" placeholder="username"/>
-              <input type="password" placeholder="password"/>
-              <button>login</button>
-              <p class="message">Not registered? <a href="#">Create an account</a></p>
+              <input type="text" placeholder="nama pengguna"/>
+              <input type="password" placeholder="kata sandi"/>
+              <button>Masuk</button>
             </form>
         </div>
         </div>
@@ -985,3 +988,4 @@ $(json).each(function(i,val){
 </body>
 
 </html>
+

@@ -1,0 +1,58 @@
+[
+  {
+    "nama_layanan": "Pusat Informasi",
+    "deskripsi": "Kanal informasi Kepegawaian terpusat dan terintegrasi yang dikelola oleh Pengelola Kepegawaian.",
+    "keterangan": "Pembaharuan Integrasi",
+    "url": "",
+    "icon": "https://cdn-icons-png.flaticon.com/128/2476/2476231.png"
+  },
+  {
+    "nama_layanan": "Presensi & AGW",
+    "deskripsi": "Aplikasi Gaji Web & Rekapitulasi kehadiran pegawai",
+    "keterangan": "Pembaharuan Integrasi",
+    "url": "",
+    "icon": "https://cdn-icons-png.flaticon.com/128/893/893081.png"
+  },
+  {
+    "nama_layanan": "Usulan Cuti Pegawai",
+    "deskripsi": "Pengajuan cuti tahunan, cuti sakit, atau cuti lainnya secara online dengan alur persetujuan yang jelas.",
+    "keterangan": "Estimasi Proses 7 hari kerja",
+    "url": "",
+    "icon": "https://cdn-icons-png.flaticon.com/128/684/684930.png"
+  },
+  {
+    "nama_layanan": "Tugas Belajar, SKKP & SKMI",
+    "deskripsi": "Layanan Pengajuan Tugas Belajar, Surat Keputusan Penyesuaian Pendidikan, dan Surat Keterangan Memiliki Ijazah.",
+    "keterangan": "Estimasi Proses 7 hari kerja",
+    "url": "",
+    "icon": "https://cdn-icons-png.flaticon.com/128/2293/2293843.png"
+  },
+  {
+    "nama_layanan": "KGB Online",
+    "deskripsi": "Proses Kenaikan Gaji Berkala yang terotomatisasi serta terintegrasi dengan SIMPEG",
+    "keterangan": "Proses Sesuai regulasi",
+    "url": "",
+    "icon": "https://cdn-icons-png.flaticon.com/128/10306/10306718.png"
+  },
+  {
+    "nama_layanan": "Maturitas",
+    "deskripsi": "Pengukuran indeks dan skala maturitas tata kelola layanan ASN. Dengan level Inisiatif, Progresif, dan Transformatif.",
+    "keterangan": "Proses sesuai regulasi",
+    "url": "",
+    "icon": "https://cdn-icons-png.flaticon.com/128/2257/2257295.png"
+  },
+  {
+    "nama_layanan": "Pindah Instansi",
+    "deskripsi": "Usulan perpindahan antar instansi ke dalam lingkungan Pemerintah Kabupaten Rembang dalam 1 pintu.",
+    "keterangan": "Proses sesuai regulasi",
+    "url": "",
+    "icon": "https://cdn-icons-png.flaticon.com/128/11229/11229559.png"
+  },
+  {
+    "nama_layanan": "Scan Virtual DRH",
+    "deskripsi": "Daftar Riwayat Hidup terbarukan, dapat diakses oleh siapa saja dan dimana saja serta terintegrasi dengan kartu pegawai.",
+    "keterangan": "Pembaharuan Integrasi",
+    "url": "",
+    "icon": "https://cdn-icons-png.flaticon.com/128/1572/1572535.png"
+  }
+]

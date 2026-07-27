@@ -1,37 +1,212 @@
 [
   {
-    "judul": "Peraturan Badan Kepegawaian Negara Nomor 2 Tahun 2019",
-    "abstraksi": "Tata Cara Masa Persiapan Pensiun bagi Pegawai Negeri Sipil (PNS)",
-    "jenis": "Peraturan Kepala BKN",
-    "tahun_terbit": 2019,
-    "url": "https://www.bkn.go.id/regulasi/peraturan-bkn-no-2-tahun-2019/"
+    "judul": "Undang-Undang Nomor 20 Tahun 2023 tentang Aparatur Sipil Negara",
+    "abstraksi": "Kerangka hukum utama pilar transformasi ASN yang mengatur asas, prinsip, nilai dasar, hak dan kewajiban, pengembangan kompetensi, digitalisasi manajemen ASN, serta kesetaraan pengelolaan PNS dan PPPK.",
+    "kategori": "Manajemen ASN & Pegawai",
+    "url": "https://peraturan.bpk.go.id/details/269470/uu-no-20-tahun-2023"
   },
   {
-    "judul": "Peraturan Badan Kepegawaian Negara Republik Indonesia Nomor 4 Tahun 2025. ",
-    "abstraksi": "Periodisasi Kenaikan Pangkat Pegawai Negeri Sipil",
-    "jenis": "Peraturan Kepala BKN",
-    "tahun_terbit": 2025,
-    "url": "https://www.bkn.go.id/regulasi/peraturan-bkn-nomor-4-tahun-2025/"
+    "judul": "PP Nomor 17 Tahun 2020 tentang Perubahan atas PP Nomor 11 Tahun 2017 tentang Manajemen PNS",
+    "abstraksi": "Mengatur ketentuan pengelolaan PNS secara menyeluruh, mencakup perencanaan kebutuhan, pengadaan, pangkat/jabatan, pengembangan karier, penilaian kinerja, hingga pemberhentian dan pensiun.",
+    "kategori": "Manajemen ASN & Pegawai",
+    "url": "https://peraturan.bpk.go.id/Details/134462/pp-no-17-tahun-2020"
   },
   {
-    "judul": "Peraturan Bupati Nomor 1 Tahun 2024",
-    "abstraksi": "Perubahan Keempat Atas Peraturan Bupati Rembang Nomor 64 Tahun 2020 Tentang Pemberian Tambahan Penghasilan Pegawai Aparatur Sipil Negara di Lingkungan Pemerintah Kabupaten Rembang",
-    "jenis": "Peraturan Bupati",
-    "tahun_terbit": 2024,
-    "url": "https://jdih.rembangkab.go.id/inventarisasi-hukum/detail/perbup_1_th_2024"
+    "judul": "PP Nomor 49 Tahun 2018 tentang Manajemen PPPK",
+    "abstraksi": "Pengaturan pengelolaan PPPK yang mencakup mekanisme penetapan kebutuhan, pengadaan, penilaian kinerja, penggajian, penghargaan, hingga pemutusan hubungan perjanjian kerja.",
+    "kategori": "Manajemen ASN & Pegawai",
+    "url": "https://www.bkn.go.id/regulasi/peraturan-pemerintah-republik-indonesia-nomor-49-tahun-2018/"
   },
   {
-    "judul": "Peraturan Bupati Nomor 22 Tahun 2024",
+    "judul": "Permenpan RB Nomor 22 Tahun 2021 tentang Pola Karier PNS",
+    "abstraksi": "Petunjuk tata cara penyusunan dan penerapan pola karier horizontal, vertikal, maupun diagonal untuk memberikan kejelasan arah pengembangan karier PNS.",
+    "kategori": "Manajemen ASN & Pegawai",
+    "url": "https://peraturan.bpk.go.id/Download/163769/Permen%2520PANRB%2520No.%252022%2520Tahun%25202021.pdf"
+  },
+  {
+    "judul": "Permenpan RB Nomor 1 Tahun 2023 tentang Jabatan Fungsional: ",
+    "abstraksi": "Tata kelola Jabatan Fungsional yang memfokuskan penetapan Angka Kredit berbasis pada predikat Penilaian Kinerja Pegawai (predikat kinerja).",
+    "kategori": "Jabatan Fungsional",
+    "url": "https://peraturan.bpk.go.id/Details/240815/permen-pan-rb-no-1-tahun-2023"
+  },
+  {
+    "judul": "Peraturan Kepala BKN Nomor 3 Tahun 2023 tentang Angka Kredit, Kenaikan Pangkat dan Jenjang Jabatan Fungsional",
+    "abstraksi": "Ketentuan teknis akumulasi angka kredit, mekanisme konversi predikat kinerja menjadi angka kredit, serta syarat pengusulan kenaikan pangkat dan jenjang JF.",
+    "kategori": "Jabatan Fungsional",
+    "url": "https://www.bkn.go.id/regulasi/peraturan-bkn-nomor-3-tahun-2023/"
+  },
+  {
+    "judul": "Keputusan Kepala BKN Nomor 12 Tahun 2002",
+    "abstraksi": "Petunjuk teknis dan syarat administratif pelaksanaan kenaikan pangkat PNS (pilihan, reguler, penyesuaian ijazah, dll.) sesuai regulasi dasar Kenaikan Pangkat.",
+    "kategori": "Kenaikan Pangkat",
+    "url": "https://jdih.bkn.go.id/Detail_peraturan/breaking/1206"
+  },
+  {
+    "judul": "Peraturan BKN Nomor 2 Tahun 2025 tentang Kenaikan Pangkat Reguler PNS",
+    "abstraksi": "Ketentuan tata cara pengusulan dan penetapan kenaikan pangkat reguler bagi PNS yang tidak menduduki jabatan struktural atau fungsional tertentu.",
+    "kategori": "Kenaikan Pangkat",
+    "url": "https://www.bkn.go.id/regulasi/peraturan-bkn-nomor-2-tahun-2025/"
+  },
+  {
+    "judul": "Peraturan Kepala BKN Nomor 4 Tahun 2025 tentang Periodisasi Kenaikan Pangkat PNS",
+    "abstraksi": "Penyempurnaan jadwal dan frekuensi periode kenaikan pangkat dalam satu tahun anggaran untuk efisiensi layanan kepegawaian.",
+    "kategori": "Kenaikan Pangkat",
+    "url": "https://www.bkn.go.id/storage/2025/09/Peraturan-BKN-Nomor-4-Tahun-2025-tentang-Periodisasi-Kenaikan-Pangkat-PNS.pdf"
+  },
+  {
+    "judul": "SE BKN Nomor 9 Tahun 2024 tentang Penjelasan Tambahan Pelaksanaan Kepegawaian Negara",
+    "abstraksi": "Surat edaran penjelas yang memberikan penegasan atas isu-isu teknis dan operasional kepegawaian terkini di lingkungan instansi pemerintah.",
+    "kategori": "Kenaikan Pangkat",
+    "url": "https://jdih.bkn.go.id/P_presiden_d1/breaking/2594"
+  },
+  {
+    "judul": "Peraturan Bupati Nomor 22 Tahun 2024 Tentang Pola Karier Pegawa Negeri Sipil",
     "abstraksi": "Pola Karier Pegawa Negeri Sipil",
-    "jenis": "Peraturan Bupati",
-    "tahun_terbit": 2024,
+    "kategori": "Kenaikan Pangkat",
     "url": "https://jdih.rembangkab.go.id/inventarisasi-hukum/detail/perbup_22_th_2024"
   },
   {
-    "judul": "Surat Edaran Badan Kepegawaian Negara Nomor 6 Tahun 2024",
+    "judul": "Keputusan Kepala BKN Nomor 41 Tahun 2026 tentang Kamus Kompetensi Teknis JF Bidang Manajemen ASN",
+    "abstraksi": "Acuan standar kompetensi teknis yang harus dimiliki oleh pejabat fungsional di bidang Manajemen ASN (seperti Analis SDM AP dan Assessor SDM AP).",
+    "kategori": "Uji Kompetensi Jabatan Fungsional Manajemen ASN",
+    "url": "https://jdih.bkn.go.id/Detail_peraturan/breaking/2632"
+  },
+  {
+    "judul": "SE BKN Nomor 1 Tahun 2026 tentang Panduan Penyelenggaraan Uji Kompetensi JF Bidang Manajemen ASN ",
+    "abstraksi": "Pedoman teknis tata cara pelaksanaan uji kompetensi sebagai syarat pengangkatan, kenaikan jenjang, atau perpindahan dari jabatan lain ke JF Bidang Manajemen ASN.",
+    "kategori": "Uji Kompetensi Jabatan Fungsional Manajemen ASN",
+    "url": "https://jdih.bkn.go.id/P_presiden_d1/breaking/2634"
+  },
+  {
+    "judul": "Peraturan BKN Nomor 5 Tahun 2019 tentang Tata Cara Pelaksanaan Mutasi",
+    "abstraksi": "Prosedur dan mekanisme alih tugas/mutasi PNS antar-instansi pusat, antar-daerah, maupun dari/ke instansi pusat dan daerah.",
+    "kategori": "Mutasi & Peninjauan Masa Kerja",
+    "url": "https://peraturan.bpk.go.id/Details/140307/peraturan-bkn-no-5-tahun-2019"
+  },
+  {
+    "judul": "PP Nomor 7 Tahun 1977 tentang Peraturan Gaji PNS",
+    "abstraksi": "Dasar hukum penetapan struktur gaji pokok, tunjangan, dan skala gaji berdasarkan golongan/ruang serta masa kerja PNS.",
+    "kategori": "Mutasi & Peninjauan Masa Kerja",
+    "url": "https://jdih.bkn.go.id/Detail_peraturan/breaking/2020"
+  },
+  {
+    "judul": "PP Nomor 98 Tahun 2000 jo PP Nomor 11 Tahun 2002 tentang Pengadaan PNS",
+    "abstraksi": "Pengaturan awal pengadaan pegawai serta dasar perhitungan Peninjauan Masa Kerja (PMK) untuk pengalaman kerja sebelum diangkat menjadi PNS.",
+    "kategori": "Mutasi & Peninjauan Masa Kerja",
+    "url": "https://peraturan.bpk.go.id/Details/53664/pp-no-98-tahun-2000"
+  },
+  {
+    "judul": "Peraturan Bupati Nomor 25 Tahun 2025 Tentang Perubahan Ketujuh Atas Peraturan Bupati Rembang Nomor 64 Tahun 2020 Tentang Pemberian Tambahan Penghasilan Pegawai Aparatur Sipil Negara Di Lingkungan Pemerintah Kabupaten Rembang",
+    "abstraksi": "perubahan ketujuh atas pemberian Tambahan Penghasilan Pegawai (TPP), yang berlaku efektif per 1 Oktober 2025 dan berdampak pada penyesuaian komponen serta kriteria penerima TPP bagi ASN di lingkungan Pemerintah Kabupaten Rembang.",
+    "kategori": "Tunjangan",
+    "url": "https://jdih.rembangkab.go.id/inventarisasi-hukum/detail/perbup_25_th_2025"
+  },
+  {
+    "judul": "Surat Edaran Kepala BKN Nomor 6 Tahun 2024 adalah aturan tentang penjelasan ketentuan perpanjangan batas usia anak PNS yang berhak menerima tunjangan keluarga.",
     "abstraksi": "Ketentuan dan Syarat Perpanjangan Batas Usia Penerima Tunjangan Anak bagi PNS",
-    "jenis": "Surat Edaran BKN",
-    "tahun_terbit": 2024,
+    "kategori": "Tunjangan",
     "url": "https://www.bkn.go.id/regulasi/surat-edaran-kepala-badan-kepegawaian-negara-nomor-6-tahun-2024/"
+  },
+  {
+    "judul": "Perpres Nomor 12 Tahun 1961 tentang Pemberian Tugas Belajar",
+    "abstraksi": "Landasan awal pemberian izin dan hak bagi PNS yang ditugaskan melanjutkan pendidikan formal.",
+    "kategori": "Tugas Belajar & Pencantuman Gelar",
+    "url": "https://peraturan.bpk.go.id/Details/69415/perpres-no-12-tahun-1961"
+  },
+  {
+    "judul": "SE Menteri PANRB Nomor 28 Tahun 2021 tentang Pengembangan Kompetensi melalui Jalur Pendidikan ",
+    "abstraksi": "Memperbarui skema dan persyaratan Tugas Belajar/Izin Belajar, penyesuaian akreditasi program studi, serta pembiayaannya.",
+    "kategori": "Tugas Belajar & Pencantuman Gelar",
+    "url": "https://www.bkn.go.id/regulasi/surat-edaran-menteri-panrb-no-28-tahun-2021/"
+  },
+  {
+    "judul": "SE BKN Nomor 15 Tahun 2024 tentang Penjelasan Teknis Layanan Pencantuman Gelar dan Peningkatan Pendidilan Pegawai Negeri Sipil",
+    "abstraksi": "Proses pengusulan dilakukan secara digital terintegrasi melalui Sistem Informasi Aparatur Sipil Negara (SIASN) milik BKN",
+    "kategori": "Tugas Belajar & Pencantuman Gelar",
+    "url": "https://jdih.bkn.go.id/P_presiden_d1/breaking/2599"
+  },
+  {
+    "judul": "Surat Edaran Kepala BKN Nomor 15 Tahun 2024 terkait penjelasan teknis layanan kepegawaian",
+    "abstraksi": "Proses pengusulan dilakukan secara digital terintegrasi melalui Sistem Informasi Aparatur Sipil Negara (SIASN) milik BKN",
+    "kategori": "Tugas Belajar & Pencantuman Gelar",
+    "url": "https://www.bkn.go.id/storage/2025/03/SE-Terkait-Layanan-Pencantuman-Gelar-ASN.pdf"
+  },
+  {
+    "judul": "Surat Edaran Sekretaris Daerah 800/5035/2025 tanggal 14 Oktober 2025 tentang Pencatuman Gelar dan Update Data.",
+    "abstraksi": "Surat edaran teknis instansi/daerah mengenai batas waktu dan Prosedur Operasional Standar (SOP) pembaruan data kualifikasi dan gelar akademik pegawai.",
+    "kategori": "Tugas Belajar & Pencantuman Gelar",
+    "url": "https://bkd.rembangkab.go.id/content/files/2025/11/PENCANTUMAN-GELAR-AKADEMIK-ASN-2025-1.pdf"
+  },
+  {
+    "judul": "Peraturan BKN No. 2 Tahun 2019 mengatur tentang Tata Cara Masa Persiapan Pensiun (MPP) bagi Pegawai Negeri Sipil (PNS)",
+    "abstraksi": "Selama menjalani masa persiapan pensiun, PNS dibebaskan dari tugas jabatannya dan berhak menerima uang MPP setiap bulan sebesar 1 (satu) kali penghasilan terakhir yang terdiri atas gaji pokok, tunjangan keluarga, dan tunjangan pangan. Masa persiapan pensiun ini diberikan paling lama 1 (satu) tahun bagi PNS yang akan mencapai batas usia pensiun untuk mempersiapkan diri kembali ke masyarakat",
+    "kategori": "Pensiun & Pemberhentian",
+    "url": "https://www.bkn.go.id/regulasi/peraturan-bkn-no-2-tahun-2019/"
+  },
+  {
+    "judul": "Peraturan BKN Nomor 3 Tahun 2020 tentang Petunjuk Teknis Pemberhentian PNS",
+    "abstraksi": "Pedoman operasional mengenai tata cara pemberhentian PNS, baik pemberhentian atas permintaan sendiri, mencapai Batas Usia Pensiun (BUP), udur diri, pelanggaran disiplin, maupun karena alasan kedinasan lainnya.",
+    "kategori": "Pensiun & Pemberhentian",
+    "url": "https://www.bkn.go.id/regulasi/peraturan-bkn-no-3-tahun-2020/"
+  },
+  {
+    "judul": "Peraturan BKN Nomor 7 Tahun 2021 tentang Tata Cara Pemberian Cuti PNS",
+    "abstraksi": "Perubahan ketentuan permohonan dan pemberian jenis-jenis cuti PNS (cuti tahunan, sakit, melahirkan, besar, karena alasan penting, dan cuti di luar tanggungan negara).",
+    "kategori": "Cuti Pegawai",
+    "url": "https://www.bkn.go.id/regulasi/peraturan-badan-kepegawaian-negara-nomor-7-tahun-2021/"
+  },
+  {
+    "judul": "Peraturan Badan Kepegawaian Negara Nomor 7 Tahun 2022 tentang Tata Cara Pemberian Cuti Pegawai Pemerintah Dengan Perjanjian Kerja",
+    "abstraksi": "Pengaturan jenis, durasi, dan mekanisme pemberian hak cuti yang berlaku khusus bagi Pegawai Pemerintah dengan Perjanjian Kerja.",
+    "kategori": "Cuti Pegawai",
+    "url": "https://www.bkn.go.id/regulasi/peraturan-bkn-nomor-7-tahun-2022/"
+  },
+  {
+    "judul": "SE MENPAN RB Nomor 14 Tahun 2023 mengatur tentang pemberian cuti bagi Pegawai Pemerintah dengan Perjanjian Kerja (PPPK)",
+    "abstraksi": "mencakup cuti tahunan, cuti sakit, dan cuti melahirkan.",
+    "kategori": "Cuti Pegawai",
+    "url": "https://jdih.menpan.go.id/dokumen-hukum/surat-edaran-menteri-pendayagunaan-aparatur-negara-dan-reformasi-birokrasi-nomor-14-tahun-2023-tenta-1739"
+  },
+  {
+    "judul": "Surat Edaran Sekretaris Daerah Nomor 800/2850/2022 Tahun 2022 Tentang Cuti Pegawai Negeri Sipil",
+    "abstraksi": "Surat edaran teknis pengajuan cuti PNS di lingkungan Pemerintah Kabupaten Rembang",
+    "kategori": "Cuti Pegawai",
+    "url": "https://jdih.rembangkab.go.id/inventarisasi-hukum/detail/suratedaransekretaris_800-2850-2022_th_2022_1"
+  },
+  {
+    "judul": "Surat Edaran Sekretaris Daerah Nomor 800/5682/2023 Tahun 2023",
+    "abstraksi": "Surat edaran teknis pengajuan cuti PPPK di lingkungan Pemerintah Kabupaten Rembang",
+    "kategori": "Cuti Pegawai",
+    "url": "https://jdih.rembangkab.go.id/inventarisasi-hukum/detail/suratedaransekretaris_800-5682-2023_th_2023_1"
+  },
+  {
+    "judul": "PP Nomor 45 Tahun 1990 jo PP Nomor 10 Tahun 1983 tentang Izin Perkawinan dan Perceraian PNS",
+    "abstraksi": "Aturan ketat mengenai kewajiban PNS untuk memperoleh izin atau pemberitahuan tertulis dari pejabat berwenang sebelum melakukan pernikahan atau perceraian.",
+    "kategori": "Izin Perkawinan dan Perceraian",
+    "url": "https://peraturan.bpk.go.id/Details/60959/pp-no-45-tahun-1990"
+  },
+  {
+    "judul": "SE Nomor 48 Tahun 1990 tentang Ijin Perkawinan dan Perceraian bagi PNS",
+    "abstraksi": "Petunjuk pelaksanaan dan penegasan tata cara pengajuan serta syarat administratif izin perkawinan/perceraian PNS.",
+    "kategori": "Izin Perkawinan dan Perceraian",
+    "url": "https://jdih.bkn.go.id/Detail_peraturan/breaking/2102"
+  },
+  {
+    "judul": "UU Nomor 20 Tahun 2009 tentang Gelar, Tanda Jasa, dan Tanda Kehormatan",
+    "abstraksi": "Aturan induk pengelolaan gelar dan tanda kehormatan negara.",
+    "kategori": "Satyalancana Karya Satya & Tanda Kehormatan",
+    "url": "https://peraturan.bpk.go.id/Details/38640/uu-no-20-tahun-2009"
+  },
+  {
+    "judul": "PP Nomor 35 Tahun 2010 tentang Pelaksanaan UU Nomor 20 Tahun 2009",
+    "abstraksi": "Ketentuan tata cara pengusulan, pemberian, serta kriteria penerima tanda jasa dan tanda kehormatan (termasuk Satyalancana Karya Satya untuk pengabdian 10, 20, dan 30 tahun).",
+    "kategori": "Satyalancana Karya Satya & Tanda Kehormatan",
+    "url": "https://peraturan.bpk.go.id/Details/5047/pp-no-35-tahun-2010"
+  },
+  {
+    "judul": "Pedoman Dewan Gelar, Tanda Jasa, dan Tanda Kehormatan Nomor 1 Tahun 2024",
+    "abstraksi": "Pedoman teknis terkini mengenai verifikasi kelayakan usulan, pencabutan, serta tata cara pemakaian gelar dan tanda kehormatan secara resmi.",
+    "kategori": "Satyalancana Karya Satya & Tanda Kehormatan",
+    "url": "https://www.setneg.go.id/baca/index/prosedur_pemberian_dan_penerima_gelar_tanda_jasa_dan_tanda_kehormatan"
   }
 ]

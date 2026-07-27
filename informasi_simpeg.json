@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "judul": "Usulan Cuti Pegawai",
+        "deskripsi": "Pengajuan cuti tahunan, cuti sakit, atau cuti lainnya secara online dengan alur persetujuan yang jelas.",
+        "tanggal": "27 Juli",
+        "user": "username"
+    },
+    {
+        "judul": "Pengajuan Kenaikan Pangkat",
+        "deskripsi": "Informasi mengenai pengajuan kenaikan pangkat pegawai.",
+        "tanggal": "26 Juli",
+        "user": "admin"
+    }
+]
